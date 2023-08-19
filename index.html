@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Correio do Arraiá</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe000;
+        }
+        .container {
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ffa000;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ffa000;
+            font-size: 24px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ffa000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff8000;
+        }
+        #successMessage {
+            color: green;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="festajunina.png" alt="Festa Junina" style="width:100%;">
+    <div class="container">
+        <h1>Correio do Arraiá</h1>
+        <form id="messageForm">
+            <input required type="text" id="from" placeholder="Seu nome">
+            <input required type="text" id="to" placeholder="Nome do destinatário">
+            <textarea required id="text" placeholder="Mensagem" rows="4"></textarea>
+            <button type="button" id="sendButton">Enviar</button>
+        </form>
+        <p id="successMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
