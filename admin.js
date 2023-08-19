@@ -64,5 +64,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Fetch and play messages every 10 minutes
-    setInterval(fetchAndPlayMessages, /*10 * 60 * 1000*/ 10000); // 10 minutes in milliseconds
+    setInterval(fetchAndPlayMessages, 10 * 60 * 1000); // 10 minutes in milliseconds
 });
